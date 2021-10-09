@@ -1,0 +1,64 @@
+#services{
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+h5{
+    font-family: 'Quattrocento',serif;
+    color: #eb3656;
+    font-size: 18px;
+}
+
+.services-container{
+    padding-top: 50px;
+}
+
+.service .container{
+    background-color: #fff;
+    margin-bottom: 25px;
+    padding: 50px 30px;
+    transition: all .3s ease-out;
+
+}
+
+.service .container:hover{
+    background-color: #eb3656;
+}
+
+.service .container:hover i ,.service .container:hover h4, .service .container:hover p{
+    color:#fff !important;
+}
+
+.service i{
+    font-size: 52px !important;
+    color: #eb3656 !important;
+}
+
+.service h4{
+    color: black;
+    font-family: 'Barlow', sans-serif;
+}
+
+.service p{
+    opacity: 1;
+    color: #646464;
+}
+
+@media (max-width:1200px) and (min-width:992px) {
+    .service .container{
+        padding: 30px 10px;
+    }
+}
+
+@media (max-width:767px) {
+    .service .container{
+        padding: 30px 10px;
+        max-width: 350px;
+    }
+}
+
+@media (max-width:576px) {
+    .service .container{
+        max-width: none;
+    }
+}
