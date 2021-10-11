@@ -21,9 +21,9 @@ export default class Header extends Component {
                     <div className="row">
                         <div className="col-xl-8 col-lg-9 col-sm-10 text">
                             <div className="text">
-                                <h4 class="wow fadeInUp" data-wow-duration='1.5s' data-wow-delay='1s'>YOUR TRUSTED</h4>
-                                <h1 class='wow fadeInUp' data-wow-duration='1.5s' data-wow-delay='2s'><span>Interior</span> Design Partner for Home or Office</h1>
-                                <a class='wow fadeInUp' href="#contact" data-wow-duration='1.5s' data-wow-delay='2.3s'>GET A FREE QUOTE</a>
+                                <h4 class="wow fadeInUp" data-wow-duration='1.5s' data-wow-delay='2s'>YOUR TRUSTED</h4>
+                                <h1 class='wow fadeInUp' data-wow-duration='1.5s' data-wow-delay='3s'><span>Interior</span> Design Partner for Home or Office</h1>
+                                <a class='wow fadeInUp' href="#contact" data-wow-duration='1.5s' data-wow-delay='3.5s'>GET A FREE QUOTE</a>
                             </div>
                         </div>
                     </div>
