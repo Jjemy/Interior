@@ -23,7 +23,7 @@ class App extends react.Component {
     Aos.init();
     setTimeout(() => {
       document.querySelector('.spinner-container').classList.add('hide');
-    }, 3000);
+    }, 2000);
   }
   render(){
     return (
