@@ -8,6 +8,12 @@ body{
 
 .spinner-container{
     height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 999;
+    background-color: #fff;
 }
 
 .spinner-border{
@@ -36,5 +42,5 @@ body{
   }
 
   .hide{
-      display: none;
+      display: none !important;
   }

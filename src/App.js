@@ -10,25 +10,16 @@ import Contact from './components/contact/contact';
 import Footer from './components/footer/footer';
 import WOW from 'wowjs';
 import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 class App extends react.Component {
-  constructor(props) {
-    super(props);
-    this.state = { isLoading: true }
-  }
   componentDidMount() {
-    this.setState({isLoading: false})
     new WOW.WOW().init();
     Aos.init();
+    document.querySelector('.spinner-container').classList.add('hide');
   }
   render(){
     return (
-      this.state.isLoading?
-      <div class="d-flex justify-content-center align-items-center spinner-container">
-        <div class="spinner-border text-danger" role="status">
-          <span class="sr-only" />
-        </div>
-      </div>:
       <div className="App">
         <Navbar />
         <Header />
