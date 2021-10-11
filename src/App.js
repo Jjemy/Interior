@@ -22,12 +22,7 @@ class App extends react.Component {
     new WOW.WOW().init();
     Aos.init();
     setTimeout(() => {
-      if(!this.state.isLoading){
-        document.querySelector('.spinner-container').classList.add('hide');
-      }
-      else{
-        document.querySelector('.spinner-container').classList.add('hide');
-      }
+      document.querySelector('.spinner-container').classList.add('hide');
     }, 3000);
   }
   render(){
