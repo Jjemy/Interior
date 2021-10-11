@@ -10,6 +10,7 @@ export default class Navbar extends Component {
         const projects=document.querySelector('#projects');
         const team=document.querySelector('#team');
         const contact=document.querySelector('#contact');
+        console.log(team.offsetTop-10);
 
         window.onscroll=()=>{
             if (window.scrollY>10){
@@ -19,7 +20,7 @@ export default class Navbar extends Component {
                 document.querySelector('.navigation-bar').classList.remove('light-nav');
             }
 
-            if (window.scrollY>=header.offsetTop && window.scrollY<=about.offsetTop){
+            if (window.scrollY>=header.offsetTop && window.scrollY<about.offsetTop){
                 document.querySelector('#home-link').classList.add('red');
                 document.querySelector('#about-link').classList.remove('red');
                 document.querySelector('#services-link').classList.remove('red');
@@ -27,7 +28,7 @@ export default class Navbar extends Component {
                 document.querySelector('#team-link').classList.remove('red');
                 document.querySelector('#contact-link').classList.remove('red');
             }
-            else if(window.scrollY>=about.offsetTop && window.scrollY<=services.offsetTop){
+            else if(window.scrollY>=about.offsetTop && window.scrollY<services.offsetTop){
                 document.querySelector('#home-link').classList.remove('red');
                 document.querySelector('#about-link').classList.add('red');
                 document.querySelector('#services-link').classList.remove('red');
@@ -35,7 +36,7 @@ export default class Navbar extends Component {
                 document.querySelector('#team-link').classList.remove('red');
                 document.querySelector('#contact-link').classList.remove('red');
             }
-            else if(window.scrollY>=services.offsetTop && window.scrollY<=projects.offsetTop){
+            else if(window.scrollY>=services.offsetTop && window.scrollY<projects.offsetTop){
                 document.querySelector('#home-link').classList.remove('red');
                 document.querySelector('#about-link').classList.remove('red');
                 document.querySelector('#services-link').classList.add('red');
@@ -43,7 +44,7 @@ export default class Navbar extends Component {
                 document.querySelector('#team-link').classList.remove('red');
                 document.querySelector('#contact-link').classList.remove('red');
             }
-            else if(window.scrollY>=projects.offsetTop && window.scrollY<=team.offsetTop){
+            else if(window.scrollY>=projects.offsetTop && window.scrollY<team.offsetTop-1){
                 document.querySelector('#home-link').classList.remove('red');
                 document.querySelector('#about-link').classList.remove('red');
                 document.querySelector('#services-link').classList.remove('red');
@@ -51,7 +52,7 @@ export default class Navbar extends Component {
                 document.querySelector('#team-link').classList.remove('red');
                 document.querySelector('#contact-link').classList.remove('red');
             }
-            else if(window.scrollY>=team.offsetTop && window.scrollY<=contact.offsetTop){
+            else if(window.scrollY>=team.offsetTop-1 && window.scrollY<contact.offsetTop-1){
                 document.querySelector('#home-link').classList.remove('red');
                 document.querySelector('#about-link').classList.remove('red');
                 document.querySelector('#services-link').classList.remove('red');
