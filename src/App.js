@@ -13,10 +13,22 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 
 class App extends react.Component {
+  constructor(props) {
+    super(props);
+    this.state = { isLoading: true }
+  }
   componentDidMount() {
+    this.setState({isLoading: false})
     new WOW.WOW().init();
     Aos.init();
-    document.querySelector('.spinner-container').classList.add('hide');
+    setTimeout(() => {
+      if(!this.state.isLoading){
+        document.querySelector('.spinner-container').classList.add('hide');
+      }
+      else{
+        document.querySelector('.spinner-container').classList.add('hide');
+      }
+    }, 500);
   }
   render(){
     return (
