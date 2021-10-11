@@ -28,7 +28,7 @@ class App extends react.Component {
       else{
         document.querySelector('.spinner-container').classList.add('hide');
       }
-    }, 500);
+    }, 3000);
   }
   render(){
     return (
