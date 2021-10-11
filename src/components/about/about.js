@@ -12,7 +12,7 @@ export default class About extends Component {
                                 <img src="assets/about-1.png" className='about-img' alt="about-img" />
                                 <img src="assets/about-2.png" className='about-img img-2' alt="about-img" />
                             </div>
-                            <button className='about-btn' data-aos='fade-right' data-aos-duration='1000' data-aos-once='true'><span>27</span>YEARS EXPERIENCE</button>
+                            <button className='about-btn' data-aos='fade-right' data-aos-duration='1500' data-aos-once='true'><span>27</span>YEARS EXPERIENCE</button>
                         </div>
                         <div className="col-lg-6 about-text">
                             <h4>ABOUT US</h4>
